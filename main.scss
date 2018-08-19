@@ -1,7 +1,11 @@
 /* main css */
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700");
+$mycolor: #490a3d;
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
 body {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 /* navbar */
 .navbar-default {
@@ -12,13 +16,21 @@ body {
   margin: 0;
   font-family: Ubuntu;
   text-transform: uppercase;
-  letter-spacing: .5px; }
-  .navbar-default .navbar-brand {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 400; }
-  .navbar-default .navbar-nav li a {
-    color: #fff; }
+  letter-spacing: .5px;
+
+  .navbar-brand {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  }
+  .navbar-nav {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
 
 /* first section */
 .section {
@@ -26,12 +38,15 @@ body {
   background-image: url(splashblur.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
 /* All sections */
 section {
   height: 500px;
   padding: 40px 0;
-  background-color: #fafafa; }
-  section #wrapper {
-    height: 500px; }
+  background-color: #fafafa;
+  #wrapper {
+    height: 500px;
+  }
+}
