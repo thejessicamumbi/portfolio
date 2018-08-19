@@ -1,0 +1,17 @@
+/* main css */
+
+body {
+  background-color: #fff;
+}
+
+.section {
+  height: 500px;
+  background-color: #fafafa;
+}
+
+/* navbar */
+.navbar-default {
+  background-color: #fafafa;
+  border-radius: 0px;
+  border-color: #fafafa;
+}
