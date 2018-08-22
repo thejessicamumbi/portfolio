@@ -1,52 +1,147 @@
-/* main css */
+/* main css / Housekeeping */
+
+/* colors */
 $mycolor: #490a3d;
 
+ /* imported fonts */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:400,700,900');
+
+html, body {
+  height: 100%;
+}
 
 body {
   background-color: #fff;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  color: #333;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.blockquote {
+   font-size: 1.6rem;
+   color: #333;
+   border: none;
+   padding: 0;
 }
 
 /* navbar */
-.navbar-default {
-  background-color: transparent;
+.navbar {
+  background-color: #fff;
   height: 70px;
   border-radius: 0px;
   border-color: transparent;
   margin: 0;
-  font-family: Ubuntu;
+  font-family: 'Roboto';
   text-transform: uppercase;
   letter-spacing: .5px;
 
   .navbar-brand {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 400;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  color: #ABD0CE;
   }
   .navbar-nav {
     li {
       a {
-        color: #fff;
+        color: #333;
+        font-size: 13px;
+        &:hover {
+          color: #ABD0CE;
+        }
       }
     }
   }
 }
 
-/* first section */
-.section {
-  height: 500px;
-  background-image: url(splashblur.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 /* All sections */
 section {
-  height: 500px;
   padding: 40px 0;
   background-color: #fafafa;
   #wrapper {
     height: 500px;
   }
+  #work {
+
+  }
+  }
+
+#stage {
+  background: url("bigbg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu';
+  letter-spacing: 1px;
+
+  #stage-caption {
+    font-size: 1.4rem;
+    font-weight: 200;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      color: #fff;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .btn-success {
+      background-color: #ABD0CE;
+      color: #333;
+      border-color: #ABD0CE;
+      border-radius: 0;
+      font-size: .9rem;
+      text-transform: uppercase;
+
+    }
+  }
+}
+
+#feature-one {
+  padding: 6rem 0;
+  background-size: 100%;
+  p {
+    letter-spacing: .5px;
+    .btn {
+      border-radius: 0;
+      background-color: #ABD0CE;
+      border-color: #ABD0CE;
+    }
+  }
+  .topic {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-family: 'Ubuntu';
+    }
+    .lead {
+      color: #7C7877;
+      font-family: 'Roboto';
+      font-size: .8rem;
+  }
+}
+
+.jumbotron {
+  height: 500px;
 }

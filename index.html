@@ -4,60 +4,70 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio demo 1</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- custom css -->
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="section">
-      <!-- navbar -->
-      <nav class="navbar navbar-default">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">J.</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
-            <!--<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Testimonies <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li> -->
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav>
-  </div> <!-- end grey section -->
-
-  <!-- about -->
-  <section id="wrapper" >
-    <div class="container">
-      <div class="jumbotron">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="/">Jessica Mumbi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </nav>
+
+    <!-- homepage stage text -->
+    <section id="stage">
+      <div class="container">
+        <div id="stage-caption">
+          <p class="lead">HELLO!</p>
+          <h1 class="display-4">I am Jessica Mumbi,</h1>
+          <p class="lead">Front-End developer & Project Manager</p>
+          <a href="" class="btn btn-lg btn-success">View my work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about me section -->
+    <section id="feature-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h4 class="topic">About Me</h4>
+            <p class="lead"></p>
+            <p>My name is Jessica Mumbi and I am a front-end developer living in Stockholm, Sweden. Front-end development is a
+            newfound passion of mine since a few years back when I had just started to discover how powerful it can be. I am passionate about
+          logic and how the webpages we visit daily are created and maintained.</p><br>
+            <p>What I really want to do is work with projects that matter and can make a difference in peoples lives.</p>
+
+            <p><a href="#" class="btn btn-success" role="button">Contact</a></p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!-- my work -->
-  <section id="wrapper">
+  <section id="wrapper work">
     <div class="container">
       <h2>My work</h2>
       <div class="row">
@@ -87,6 +97,8 @@
 
   </body>
   <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </html>
